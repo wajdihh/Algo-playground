@@ -1,9 +1,18 @@
+import searching.BinarySearch
+
 fun main(args: Array<String>) {
-    println("Hello World!")
 
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    testBinarySearch()
 }
+
+
+fun testBinarySearch() {
+    val sortedList = MY_ARRAY.sortedArray()
+
+    val hasValue = BinarySearch(sortedList, 11).hasValue()
+
+    println("isFound $hasValue")
+}
+
+
+val MY_ARRAY = arrayOf(1,3,6,11,4,9,0,2)
