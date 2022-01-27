@@ -1,6 +1,16 @@
 package searching
 
-class BinarySearch(private val sortedArray: Array<Int>, private val wantedValue: Int) {
+/** -------- WORST CASE SCENARIO ----------
+ *
+ * #Time complexity
+ * O(LogN)
+ * for N = 16
+ * log16 = 2ˆ4 -> Worst case 4 step
+ *
+ * #Space complexity
+ * O(1)
+ */
+class BasicBinarySearch(private val sortedArray: IntArray, private val wantedValue: Int) {
 
     fun hasValue(): Boolean {
 
