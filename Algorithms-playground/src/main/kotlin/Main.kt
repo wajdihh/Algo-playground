@@ -1,12 +1,14 @@
 import helper.showContent
 import searching.BasicBinarySearch
 import searching.KotlinBinarySearch
+import sorting.BasicMergeSort
 import sorting.BasicQuickSort
 
 fun main(args: Array<String>) {
 
     //testBinarySearch()
-    testQuickSort()
+    //testQuickSort()
+    testMergeSort()
 }
 
 
@@ -29,6 +31,14 @@ fun testQuickSort() {
 
     //Kotlin Way
     //val orderedList = KotlinQuickSort().sorted(MY_ARRAY)
+
+    orderedList.showContent()
+}
+
+fun testMergeSort() {
+
+    //Basic Way
+    val orderedList = BasicMergeSort().sorted(MY_ARRAY)
 
     orderedList.showContent()
 }

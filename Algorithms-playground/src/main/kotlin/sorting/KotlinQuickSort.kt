@@ -6,7 +6,7 @@ package sorting
  * O(nˆ2)
  *
  * #Space complexity
- * O(n)
+ * O(logN)
  */
 class KotlinQuickSort {
 
